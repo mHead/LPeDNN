@@ -6,6 +6,7 @@ The project aims to embed a Deep Neural Network in charge of recognize character
     - Pixel flip during transfer is a fault
     - How many faults can the DNN afford?
     - Noise injection will be performed
+    - Occlusion learning has to be considered
 ## Step1
  1. Retrieve character from the touchscreen
  2. Provide to the user a mechanism to confirm the input 
