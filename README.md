@@ -1,8 +1,9 @@
 # LPeDNN
 The project aims to embed a Deep Neural Network in charge of recognize characters from a touchscreen on a Low Power Board, specifically the LandTiger NXP LPC1768 based on ARM Cortex-M3 ucontroller
 ### Development general constraints
- 1. DNN Accuracy > 90%
- 2. Develop keeping in mind that ***reliability tests*** will be performed
+ 1. DNN Accuracy > 95%
+ 2. Low degree of redundancy, small DNN size
+ 3. Develop keeping in mind that ***reliability tests*** will be performed
     - Pixel flip during transfer is a fault
     - How many faults can the DNN afford?
     - Noise injection will be performed
