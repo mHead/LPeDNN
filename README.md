@@ -20,6 +20,6 @@ The project aims to embed a Deep Neural Network in charge of recognize character
  9. y ? stop : goto 1
  
  ## Step2
-  1. No PC is needed then no UARTS connection is needed anymore
+  1. No PC is needed then no serial connection is needed anymore
   2. The DNN has to be reduced in order to embed it on the board
   3. With the extra material try to expand the concept of **'reduce the DNN'**
