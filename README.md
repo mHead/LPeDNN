@@ -10,8 +10,8 @@ The project aims to embed a Deep Neural Network in charge of recognize character
     - Occlusion learning has to be considered
 ## Step1
  1. Retrieve character from the touchscreen
- 2. Provide to the user a mechanism to confirm the input 
- 3. If user confirms, the character is compressed and then ready to be sent via UARTS port
+ 2. Provide to the user a mechanism to confirm the input (low priority)
+ 3. If user confirms, the character is compressed and then ready to be sent via USB port
  4. The character is sent to the DNN running on a PC
  5. The DNN makes the prediction and it is displayed on the touchscreen
  6. The user can, at this point, give a feedback on the correctness of the predicted character
