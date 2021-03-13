@@ -9,7 +9,7 @@ The project aims to embed a Deep Neural Network in charge of recognize character
     - Noise injection will be performed
     - Occlusion learning has to be considered
 ## Step1
- 1. Retrieve character from the touchscreen
+ 1. Retrieve character from the touchscreen 
  2. Provide to the user a mechanism to confirm the input (low priority)
  3. If user confirms, the character is compressed and then ready to be sent via USB port
  4. The character is sent to the DNN running on a PC
