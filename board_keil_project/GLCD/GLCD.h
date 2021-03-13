@@ -88,12 +88,12 @@
 
 /* Private function prototypes -----------------------------------------------*/
 void LCD_Initialization(void);
-void LCD_Clear(uint16_t Color);
-uint16_t LCD_GetPoint(uint16_t Xpos,uint16_t Ypos);
-void LCD_SetPoint(uint16_t Xpos,uint16_t Ypos,uint16_t point);
-void LCD_DrawLine( uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1 , uint16_t color );
-void PutChar( uint16_t Xpos, uint16_t Ypos, uint8_t ASCI, uint16_t charColor, uint16_t bkColor );
-void GUI_Text(uint16_t Xpos, uint16_t Ypos, uint8_t *str,uint16_t Color, uint16_t bkColor);
+void LCD_Clear(uint16_t Color); //pulisco uno schermo e rimetto un unico colore
+uint16_t LCD_GetPoint(uint16_t Xpos,uint16_t Ypos); //legge un punto
+void LCD_SetPoint(uint16_t Xpos,uint16_t Ypos,uint16_t point); //scrivo un punto
+void LCD_DrawLine( uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1 , uint16_t color ); //scrivo una linea
+void PutChar( uint16_t Xpos, uint16_t Ypos, uint8_t ASCI, uint16_t charColor, uint16_t bkColor, int size ); //scrivo un carattere
+void GUI_Text(uint16_t Xpos, uint16_t Ypos, uint8_t *str,uint16_t Color, uint16_t bkColor, int size); //scrivo una stringa
 
 #endif 
 

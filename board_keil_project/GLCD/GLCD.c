@@ -608,7 +608,7 @@ void LCD_DrawLine( uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1 , uint16_t
 * Return         : None
 * Attention		 : None
 *******************************************************************************/
-void PutChar( uint16_t Xpos, uint16_t Ypos, uint8_t ASCI, uint16_t charColor, uint16_t bkColor )
+void PutChar( uint16_t Xpos, uint16_t Ypos, uint8_t ASCI, uint16_t charColor, uint16_t bkColor, int size)
 {
 	uint16_t i, j;
     uint8_t buffer[16], tmp_char;
@@ -616,17 +616,53 @@ void PutChar( uint16_t Xpos, uint16_t Ypos, uint8_t ASCI, uint16_t charColor, ui
     for( i=0; i<16; i++ )
     {
         tmp_char = buffer[i];
+			  
         for( j=0; j<8; j++ )
         {
+						
             if( ((tmp_char >> (7 - j)) & 0x01) == 0x01 )
             {
-                LCD_SetPoint( Xpos + j, Ypos + i, charColor );  /* ×Ö·ûÑÕÉ« */
-            }
+                i=i*size;
+								j=j*size;
+								LCD_SetPoint( Xpos + j, Ypos + i, charColor );  /* ×Ö·ûÑÕÉ« */
+							if(size==2||size==3){
+							  LCD_SetPoint( Xpos + j+1, Ypos + i, charColor );  /* ×Ö·ûÑÕÉ« */
+							  LCD_SetPoint( Xpos + j, Ypos + i+1, charColor );  /* ×Ö·ûÑÕÉ« */
+							  LCD_SetPoint( Xpos + j+1, Ypos + i+1, charColor );  /* ×Ö·ûÑÕÉ« */
+
+							}
+							if(size==3){
+							  LCD_SetPoint( Xpos + j-1, Ypos + i, charColor );  /* ×Ö·ûÑÕÉ« */
+							  LCD_SetPoint( Xpos + j, Ypos + i-1, charColor );  /* ×Ö·ûÑÕÉ« */
+							  LCD_SetPoint( Xpos + j-1, Ypos + i-1, charColor );  /* ×Ö·ûÑÕÉ« */
+								LCD_SetPoint( Xpos + j+1, Ypos + i-1, charColor );  /* ×Ö·ûÑÕÉ« */
+							  LCD_SetPoint( Xpos + j-1, Ypos + i+1, charColor );  /* ×Ö·ûÑÕÉ« */
+							}
+							  i=i/size;
+							  j=j/size;
+						}
             else
             {
-                LCD_SetPoint( Xpos + j, Ypos + i, bkColor );  /* ±³¾°ÑÕÉ« */
-            }
+                i=i*size;
+								j=j*size;
+								LCD_SetPoint( Xpos + j, Ypos + i, bkColor );  /* ×Ö·ûÑÕÉ« */
+								if(size==2||size==3){
+									LCD_SetPoint( Xpos + j+1, Ypos + i, bkColor );  /* ×Ö·ûÑÕÉ« */
+									LCD_SetPoint( Xpos + j, Ypos + i+1, bkColor );  /* ×Ö·ûÑÕÉ« */
+									LCD_SetPoint( Xpos + j+1, Ypos + i+1, bkColor );  /* ×Ö·ûÑÕÉ« */
+								}
+							  if(size==3){
+									LCD_SetPoint( Xpos + j-1, Ypos + i, bkColor );  /* ×Ö·ûÑÕÉ« */
+									LCD_SetPoint( Xpos + j, Ypos + i-1, bkColor );  /* ×Ö·ûÑÕÉ« */
+									LCD_SetPoint( Xpos + j-1, Ypos + i-1, bkColor );  /* ×Ö·ûÑÕÉ« */
+									LCD_SetPoint( Xpos + j+1, Ypos + i-1, bkColor );  /* ×Ö·ûÑÕÉ« */
+									LCD_SetPoint( Xpos + j-1, Ypos + i+1, bkColor );  /* ×Ö·ûÑÕÉ« */
+								}
+								i=i/size;
+							  j=j/size;
+						}
         }
+				
     }
 }
 
@@ -642,21 +678,21 @@ void PutChar( uint16_t Xpos, uint16_t Ypos, uint8_t ASCI, uint16_t charColor, ui
 * Return         : None
 * Attention		 : None
 *******************************************************************************/
-void GUI_Text(uint16_t Xpos, uint16_t Ypos, uint8_t *str,uint16_t Color, uint16_t bkColor)
+void GUI_Text(uint16_t Xpos, uint16_t Ypos, uint8_t *str,uint16_t Color, uint16_t bkColor, int size)
 {
     uint8_t TempChar;
     do
     {
         TempChar = *str++;  
-        PutChar( Xpos, Ypos, TempChar, Color, bkColor );    
-        if( Xpos < MAX_X - 8 )
+        PutChar( Xpos, Ypos, TempChar, Color, bkColor, size );    
+        if( Xpos < MAX_X - 8*size )
         {
-            Xpos += 8;
+            Xpos += 8*size;
         } 
-        else if ( Ypos < MAX_Y - 16 )
+        else if ( Ypos < MAX_Y - 16*size )
         {
             Xpos = 0;
-            Ypos += 16;
+            Ypos += 16*size;
         }   
         else
         {

@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>SIMULATOR</Define>
               <Undefine></Undefine>
-              <IncludePath>C:\Users\rugge\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include</IncludePath>
+              <IncludePath>C:\Users\proto\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
