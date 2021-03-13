@@ -1,0 +1,9 @@
+Cpp DNN
+  1. https://www.slideshare.net/ssuser756ec5/deep-learning-with-c-an-introduction-to-tinydnn
+  2. https://pytorch.org/tutorials/advanced/cpp_export.html
+  3. https://itnext.io/creating-a-tensorflow-dnn-in-c-part-1-54ce69bbd586
+  4. https://github.com/iamhankai/mini-dnn-cpp
+  5. https://docs.opencv.org/3.4/d9/d8d/samples_2dnn_2classification_8cpp-example.html
+Mixing C and Cpp code
+  1. https://www.oracle.com/technical-resources/articles/it-infrastructure/mixing-c-and-cplusplus.html
+  2. https://isocpp.org/wiki/faq/mixing-c-and-cpp
