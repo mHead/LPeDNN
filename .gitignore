@@ -127,3 +127,41 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Keil u-vision
+# General
+*.uvguix.*
+# Project-specific
+**/board_keil_project/Listings
+**/board_keil_project/Objects
+**/board_keil_project/*.cod
+**/board_keil_project/*.htm
+**/board_keil_project/*.i
+**/board_keil_project/*.lst
+**/board_keil_project/*.map
+**/board_keil_project/*.m51
+**/board_keil_project/*.m66
+**/board_keil_project/*.scr
+**/board_keil_project/*.
+**/board_keil_project/*.axf
+**/board_keil_project/*.b*
+**/board_keil_project/*.d
+**/board_keil_project/*.crf
+**/board_keil_project/*.elf
+**/board_keil_project/*.hex
+**/board_keil_project/*.h86
+**/board_keil_project/*.obj
+**/board_keil_project/*.o
+**/board_keil_project/*.sbr
+**/board_keil_project/*.cod
+**/board_keil_project/*.cod
+**/board_keil_project/*.ini
+**/board_keil_project/*.build_log.htm
+**/board_keil_project/*.dep
+**/board_keil_project/*.ic
+**/board_keil_project/*.lin
+**/board_keil_project/*.lnp
+**/board_keil_project/*.orc
+**/board_keil_project/*.pack
+**/board_keil_project/*.pdsc
+**/board_keil_project/*.plg
