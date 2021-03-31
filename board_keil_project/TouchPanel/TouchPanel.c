@@ -58,8 +58,8 @@ void LPC17xx_SPI_SetSpeed (uint8_t speed)
 }
 
 /*******************************************************************************
-* Function Name  : ADS7843_SPI_Init
-* Description    : ADS7843 SPI 初始化
+* Function Name  : ADS7843_SPI_Init (TouchScreen Controller)
+* Description    : ADS7843 SPI initialization
 * Input          : None
 * Output         : None
 * Return         : None
@@ -97,7 +97,7 @@ static void ADS7843_SPI_Init(void)
 
 /*******************************************************************************
 * Function Name  : TP_Init
-* Description    : ADS7843端口初始化
+* Description    : ADS7843 port initialization
 * Input          : None
 * Output         : None
 * Return         : None
@@ -107,14 +107,14 @@ void TP_Init(void)
 { 
   LPC_GPIO0->FIODIR |=  (1<<6);   /* P0.6 CS is output */
   LPC_GPIO2->FIODIR |=  (0<<13);  /* P2.13 TP_INT is input */
-  TP_CS(1); 
+  TP_CS(1); //write 1 on P0.6
   ADS7843_SPI_Init(); 
 } 
 
 /*******************************************************************************
 * Function Name  : DelayUS
-* Description    : 延时1us
-* Input          : - cnt: 延时值
+* Description    : Delay 1us
+* Input          : - cnt: delay value
 * Output         : None
 * Return         : None
 * Attention		 : None
@@ -124,8 +124,8 @@ static void DelayUS(uint32_t cnt)
   uint32_t i;
   for(i = 0;i<cnt;i++)
   {
-     uint8_t us = 12; /* 设置值为12，大约延1微秒 */    
-     while (us--)     /* 延1微秒	*/
+     uint8_t us = 12; /* Set the value to 12, about 1 microsecond delay */ 
+     while (us--)     /* Delay by 1 microsecond */
      {
        ;   
      }
@@ -135,8 +135,8 @@ static void DelayUS(uint32_t cnt)
 
 /*******************************************************************************
 * Function Name  : WR_CMD
-* Description    : 向 ADS7843写数据
-* Input          : - cmd: 传输的数据
+* Description    : Write data to ADS7843
+* Input          : -cmd: transmitted data
 * Output         : None
 * Return         : None
 * Attention		 : None
@@ -158,10 +158,10 @@ static uint8_t WR_CMD (uint8_t cmd)
 
 /*******************************************************************************
 * Function Name  : RD_AD
-* Description    : 读取ADC值
+* Description    : Read ADC value
 * Input          : None
 * Output         : None
-* Return         : ADS7843返回二字节数据
+* Return         : ADS7843 returns two bytes of data
 * Attention		 : None
 *******************************************************************************/
 static int RD_AD(void)  
@@ -181,10 +181,10 @@ static int RD_AD(void)
 
 /*******************************************************************************
 * Function Name  : Read_X
-* Description    : 读取ADS7843通道X+的ADC值 
+* Description    : Read ADC value of ADS7843 channel X+
 * Input          : None
 * Output         : None
-* Return         : ADS7843返回通道X+的ADC值
+* Return         : ADS7843 returns the ADC value of channel X+
 * Attention		 : None
 *******************************************************************************/
 int Read_X(void)  
@@ -201,10 +201,10 @@ int Read_X(void)
 
 /*******************************************************************************
 * Function Name  : Read_Y
-* Description    : 读取ADS7843通道Y+的ADC值
+* Description    : Read ADC value of ADS7843 channel Y+
 * Input          : None
 * Output         : None
-* Return         : ADS7843返回通道Y+的ADC值
+* Return         : ADS7843 returns the ADC value of channel Y+
 * Attention		 : None
 *******************************************************************************/
 int Read_Y(void)  
@@ -222,10 +222,10 @@ int Read_Y(void)
 
 /*******************************************************************************
 * Function Name  : TP_GetAdXY
-* Description    : 读取ADS7843 通道X+ 通道Y+的ADC值
+* Description    : Read ADC value of ADS7843 channel X+ channel Y+
 * Input          : None
 * Output         : None
-* Return         : ADS7843返回 通道X+ 通道Y+的ADC值 
+* Return         : ADS7843 returns the ADC value of channel X+ and channel Y+
 * Attention		 : None
 *******************************************************************************/
 void TP_GetAdXY(int *x,int *y)  
@@ -240,7 +240,7 @@ void TP_GetAdXY(int *x,int *y)
 
 /*******************************************************************************
 * Function Name  : TP_DrawPoint
-* Description    : 在指定座标画点
+* Description    : draw a point at the specified coordinates
 * Input          : - Xpos: Row Coordinate
 *                  - Ypos: Line Coordinate 
 * Output         : None
@@ -249,12 +249,12 @@ void TP_GetAdXY(int *x,int *y)
 *******************************************************************************/
 void TP_DrawPoint(uint16_t Xpos,uint16_t Ypos)
 {
-  LCD_SetPoint(Xpos,Ypos,White);  
+  LCD_SetPoint(Xpos,Ypos,Black);  
 }	
 
 /*******************************************************************************
 * Function Name  : DrawCross
-* Description    : 在指定座标画十字准星
+* Description    : Draw a crosshair at the specified coordinates
 * Input          : - Xpos: Row Coordinate
 *                  - Ypos: Line Coordinate 
 * Output         : None
@@ -283,10 +283,10 @@ void DrawCross(uint16_t Xpos,uint16_t Ypos)
 
 /*******************************************************************************
 * Function Name  : Read_Ads7846
-* Description    : 得到滤波之后的X Y
+* Description    : X Y after filtering
 * Input          : None
 * Output         : None
-* Return         : Coordinate结构体地址
+* Return         : Coordinate structure address
 * Attention		 : None
 *******************************************************************************/
 Coordinate *Read_Ads7846(void)
@@ -294,26 +294,37 @@ Coordinate *Read_Ads7846(void)
   static Coordinate  screen;
   int m0,m1,m2,TP_X[1],TP_Y[1],temp[3];
   uint8_t count=0;
-  int buffer[2][9]={{0},{0}}; 
+  int buffer[2][9]={{0},{0}}; /* Multiple sampling coordinates X and Y */
   
-	do{		   
+	do{	/* Loop sampling 9 times */
     TP_GetAdXY(TP_X,TP_Y);  
 		buffer[0][count]=TP_X[0];  
 		buffer[1][count]=TP_Y[0];
+		
+		//printf("count: %u - x: %d -  y: %d\n", count, TP_X[0], TP_Y[0]);
+		
 		count++; 
 	}while(!TP_INT_IN&& count<9);  
   
-	if(count==9){  
+	if(count==9){  /* Successful sampling 9, filtering */
+		/* calculate the average value of X */
+		/* In order to reduce the amount of computation, were divided into three groups averaged */
 		temp[0]=(buffer[0][0]+buffer[0][1]+buffer[0][2])/3;
 		temp[1]=(buffer[0][3]+buffer[0][4]+buffer[0][5])/3;
 		temp[2]=(buffer[0][6]+buffer[0][7]+buffer[0][8])/3;
+		/* Calculate the three groups of data */
 		m0=temp[0]-temp[1];
 		m1=temp[1]-temp[2];
 		m2=temp[2]-temp[0];
+		/* Absolute value of the above difference */
 		m0=m0>0?m0:(-m0);
     m1=m1>0?m1:(-m1);
 		m2=m2>0?m2:(-m2);
+		/* Judge whether the absolute difference exceeds the difference between the threshold,
+	   If these three absolute difference exceeds the threshold,
+       The sampling point is judged as outliers, Discard sampling points */
 		if( m0>THRESHOLD  &&  m1>THRESHOLD  &&  m2>THRESHOLD ) return 0;
+		/* Calculating their average value */
 		if(m0<m1)
 		{
 			if(m2<m0) 
@@ -325,7 +336,8 @@ Coordinate *Read_Ads7846(void)
 			screen.x=(temp[0]+temp[2])/2;
 		else 
 			screen.x=(temp[1]+temp[2])/2;
-
+		
+		/* calculate the average value of Y */
     temp[0]=(buffer[1][0]+buffer[1][1]+buffer[1][2])/3;
 		temp[1]=(buffer[1][3]+buffer[1][4]+buffer[1][5])/3;
 		temp[2]=(buffer[1][6]+buffer[1][7]+buffer[1][8])/3;
@@ -349,7 +361,8 @@ Coordinate *Read_Ads7846(void)
 			 screen.y=(temp[0]+temp[2])/2;
 		else
 			 screen.y=(temp[1]+temp[2])/2;
-
+		
+		//printf("x: %4u -  y: %4u\n", screen.x, screen.y);
 		return &screen;
 	}  
   return 0; 
@@ -360,7 +373,7 @@ Coordinate *Read_Ads7846(void)
 * Description    : computation of K A B C D E F
 * Input          : None
 * Output         : None
-* Return         : 
+* Return         : return 1 means success 0 failure
 * Attention		 : None
 *******************************************************************************/
 uint8_t setCalibrationMatrix( Coordinate * displayPtr,
@@ -398,10 +411,10 @@ uint8_t setCalibrationMatrix( Coordinate * displayPtr,
 
 /*******************************************************************************
 * Function Name  : getDisplayPoint
-* Description    : using K A B C D E F 
+* Description    : Use K A B C D E F to convert the value of channel X Y to LCD screen coordinates
 * Input          : None
 * Output         : None
-* Return         : 返回1表示成功 0失败
+* Return         : return 1 means success 0 failure
 * Attention		 : None
 *******************************************************************************/
 uint8_t getDisplayPoint(Coordinate * displayPtr,
@@ -422,6 +435,7 @@ uint8_t getDisplayPoint(Coordinate * displayPtr,
                       (matrixPtr->En * screenPtr->y) + 
                        matrixPtr->Fn 
                     ) / matrixPtr->Divider ;
+		 //printf("x: %d -  y: %d\n", display.x, display.y);
   }
   else
   {
@@ -432,7 +446,7 @@ uint8_t getDisplayPoint(Coordinate * displayPtr,
 
 /*******************************************************************************
 * Function Name  : TouchPanel_Calibrate
-* Description    : 校准触摸屏
+* Description    : Calibrate the touch screen
 * Input          : None
 * Output         : None
 * Return         : None
@@ -456,7 +470,7 @@ void TouchPanel_Calibrate(void)
    while( Ptr == (void*)0 );
    ScreenSample[i].x = Ptr->x; ScreenSample[i].y = Ptr->y;
   }
-  setCalibrationMatrix( &DisplaySample[0],&ScreenSample[0],&matrix ) ;  /* 送入值得到参数 */	   
+  setCalibrationMatrix( &DisplaySample[0],&ScreenSample[0],&matrix ) ;  /* Enter the value to get the parameter */   
   LCD_Clear(Black);
 } 
 

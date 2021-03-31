@@ -51,8 +51,8 @@ extern Coordinate DisplaySample[3];
 extern Matrix 		matrix ;
 extern Coordinate display ;
 
-#define	CHX 	        0x90 	/* 通道Y+的选择控制字 */	
-#define	CHY 	        0xd0	/* 通道X+的选择控制字 */
+#define	CHX 	        0x90 	/* Select control word of channel X+ */	
+#define	CHY 	        0xd0	/* Select control word of channel Y+ */
 
 #define SSPSR_RNE       2
 #define SSPSR_BSY       4

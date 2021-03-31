@@ -475,6 +475,21 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>setup</GroupName>
+          <Files>
+            <File>
+              <FileName>setup.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\setup\setup.c</FilePath>
+            </File>
+            <File>
+              <FileName>setup.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\setup\setup.h</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>

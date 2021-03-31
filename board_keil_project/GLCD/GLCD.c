@@ -120,8 +120,8 @@ static __attribute__((always_inline)) uint16_t LCD_Read (void)
 
 /*******************************************************************************
 * Function Name  : LCD_WriteIndex
-* Description    : LCD写寄存器地址
-* Input          : - index: 寄存器地址
+* Description    : LCD write register address ( on include data only address )
+* Input          :  - index: register address
 * Output         : None
 * Return         : None
 * Attention		 : None
@@ -141,8 +141,8 @@ static __attribute__((always_inline)) void LCD_WriteIndex(uint16_t index)
 
 /*******************************************************************************
 * Function Name  : LCD_WriteData
-* Description    : LCD写寄存器数据
-* Input          : - index: 寄存器数据
+* Description    : LCD write register data
+* Input          : - index: register data
 * Output         : None
 * Return         : None
 * Attention		 : None
@@ -160,10 +160,10 @@ static __attribute__((always_inline)) void LCD_WriteData(uint16_t data)
 
 /*******************************************************************************
 * Function Name  : LCD_ReadData
-* Description    : 读取控制器数据
+* Description    : LCD read data
 * Input          : None
 * Output         : None
-* Return         : 返回读取到的数据
+* Return         : 穜eturn data
 * Attention		 : None
 *******************************************************************************/
 static __attribute__((always_inline)) uint16_t LCD_ReadData(void)
@@ -200,11 +200,11 @@ static __attribute__((always_inline)) void LCD_WriteReg(uint16_t LCD_Reg,uint16_
 }
 
 /*******************************************************************************
-* Function Name  : LCD_WriteReg
+* Function Name  : LCD_ReadReg
 * Description    : Reads the selected LCD Register.
-* Input          : None
+* Input          : - LCD_Reg: address of the selected register.
 * Output         : None
-* Return         : LCD Register Value.
+* Return         : return Register data.
 * Attention		 : None
 *******************************************************************************/
 static __attribute__((always_inline)) uint16_t LCD_ReadReg(uint16_t LCD_Reg)
@@ -379,7 +379,7 @@ void LCD_Initialization(void)
 
 /*******************************************************************************
 * Function Name  : LCD_Clear
-* Description    : 将屏幕填充成指定的颜色，如清屏，则填充 0xffff
+* Description    : clear LCD screen
 * Input          : - Color: Screen Color
 * Output         : None
 * Return         : None
@@ -417,11 +417,11 @@ void LCD_Clear(uint16_t Color)
 
 /******************************************************************************
 * Function Name  : LCD_BGR2RGB
-* Description    : RRRRRGGGGGGBBBBB 改为 BBBBBGGGGGGRRRRR 格式
-* Input          : - color: BRG 颜色值  
+* Description    : RRRRRGGGGGGBBBBB change BBBBBGGGGGGRRRRR
+* Input          : - color: BRG color value
 * Output         : None
-* Return         : RGB 颜色值
-* Attention		 : 内部函数调用
+* Return         : RGB color value
+* Attention		 : None
 *******************************************************************************/
 static uint16_t LCD_BGR2RGB(uint16_t color)
 {
@@ -438,7 +438,7 @@ static uint16_t LCD_BGR2RGB(uint16_t color)
 
 /******************************************************************************
 * Function Name  : LCD_GetPoint
-* Description    : 获取指定座标的颜色值
+* Description    : Get the color value of the specified coordinates
 * Input          : - Xpos: Row Coordinate
 *                  - Xpos: Line Coordinate 
 * Output         : None
@@ -485,7 +485,7 @@ uint16_t LCD_GetPoint(uint16_t Xpos,uint16_t Ypos)
 
 /******************************************************************************
 * Function Name  : LCD_SetPoint
-* Description    : 在指定座标画点
+* Description    : Draw point at the specified coordinates
 * Input          : - Xpos: Row Coordinate
 *                  - Ypos: Line Coordinate 
 * Output         : None
