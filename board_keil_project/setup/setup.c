@@ -5,7 +5,7 @@ int startGame=0;
 int isWritten=0;
 int inferenceStarted=0;
 uint8_t drawnPoints[28][28];
-int threshold = 10;
+int threshold = 32;
 
 /*******************************************************************************
 * Function Name  : spaceText

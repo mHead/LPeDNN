@@ -52,11 +52,16 @@ void TIMER0_IRQHandler (void)
 					if(!isWritten)
 						clearPad();//clear to delete the testing result printed on screen	before		
 					#endif
-					TP_DrawPoint(display.x,display.y);
 					isWritten=1;
 					p.x=display.x-8;
 					p.y=display.y-52;
-					drawnPoints[p.x/8][p.y/8]++; //count +1 for the macrocell containing this pixel
+					for(i=-1;i<2;i++)
+						for(j=-1;j<2;j++){
+							if((p.x+i)>=0&&(p.y+j)>=0&&(p.x+i)<224&&(p.y+j)<224){
+								TP_DrawPoint(display.x+i,display.y+j);
+								drawnPoints[(p.x+i)/8][(p.y+j)/8]++; //count +1 for the macrocell containing this pixel
+								}
+						}
 				}
 			}
 		}
