@@ -23,3 +23,23 @@ The project aims to embed a Deep Neural Network in charge of recognize character
   1. No PC is needed then no serial connection is needed anymore
   2. The DNN has to be reduced in order to embed it on the board
   3. With the extra material try to expand the concept of **'reduce the DNN'**
+
+## USB Serial Communication
+
+### Jumper configuration
+Use the following configuration for the jumpers:
+
+![Cattura](https://user-images.githubusercontent.com/17108362/114763685-5fd43d00-9d63-11eb-9796-44ccb49d0f8e.PNG)
+
+IMPORTANT: notice that JP9 and JP11 are "switched" to the side of D+ and D- respectively and this is what enables the USB connection
+
+### Serial Write
+
+The Landtiger's side on the communication is based on the USBDevice library (available in the Mbed compiler).
+Here's a basic example of its use: https://os.mbed.com/handbook/USBSerial
+
+### Serial Read
+
+The PC's side of the communication is based on this library: https://github.com/ZainUlMustafa/Connect-And-Use-Arduino-via-Cpp-Software-Made-In-Any-IDE/tree/master/Arduino2PC_SC (only main.cpp, SerialPort.cpp and SerialPort.h are important).
+I removed the write function because it was not used by the pc, which just has to read.
+IMPORTANT: the main.cpp assumes that the communication takes place in the port COM3, so if things do not work verify via the device manager that the port is actually that one
