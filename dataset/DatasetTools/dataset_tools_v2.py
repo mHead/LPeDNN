@@ -135,7 +135,7 @@ def make_x_y_split(source_img_dataset_array, train_perc):
 			#pick for train
 			tot_train_indexes_no += 1
 			train_test_indexes[i] = 1
-	print(f"Indexes array created: {train_test_indexes} len: {len(train_test_indexes)}\n train_indexes: {tot_test_indexes_no}\n test indexes:{tot_test_indexes_no}\n\n")
+	print(f"Indexes array created: {train_test_indexes} len: {len(train_test_indexes)}\n train_indexes: {tot_train_indexes_no}\n test indexes:{tot_test_indexes_no}\n\n")
 
 	return train_test_indexes
 
@@ -169,7 +169,7 @@ def print_extractOf_dataset(imgs_array, labels_array, numberOfImages):
 		plt.xticks([])
 		plt.yticks([])
 		plt.grid(False)
-		plt.imshow(dataset_array[i], cmap=plt.cm.gray)
+		plt.imshow(imgs_array[i], cmap=plt.cm.gray)
 	plt.show()
 	print(f"Labels Array: {labels_array}")
 
