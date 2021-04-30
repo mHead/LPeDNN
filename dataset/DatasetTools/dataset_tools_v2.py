@@ -139,6 +139,28 @@ def make_x_y_split(source_img_dataset_array, train_perc):
 
 	return train_test_indexes
 
+
+
+def get_splits(hasy_imgs_array, hasy_labels_array, train_test_indexes):
+	hasy_train_imgs_array = []
+	hasy_test_imgs_array = []
+	hasy_train_labels_array = []
+	hasy_test_labels_array = []
+
+	for i in range(len(train_test_indexes)):
+		if train_test_indexes[i] == 0: #pick for test
+			hasy_test_imgs_array.append(hasy_imgs_array[i])
+			hasy_test_labels_array.append(hasy_labels_array[i])
+		else: #pick for train
+			hasy_train_imgs_array.append(hasy_imgs_array_array[i])
+			hasy_train_labels_array.append(hasy_labels_array[i])
+
+	hasy_train_imgs_array, hasy_train_labels_array = toArray(hasy_train_imgs_array, hasy_train_labels_array)
+	hasy_test_imgs_array, hasy_test_labels_array = toArray(hasy_test_imgs_array, hasy_test_labels_array)
+
+
+	return hasy_train_imgs_array, hasy_test_imgs_array, hasy_train_labels_array, hasy_test_labels_array
+
 #support function to visually print dataset 
 def print_extractOf_dataset(imgs_array, labels_array, numberOfImages):
 	plt.figure(figsize = (10, 10))
