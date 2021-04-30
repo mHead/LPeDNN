@@ -38,7 +38,7 @@ def make_hasy_dataset(dataset_path, csv_dataframe):
 
 	for index, row in csv_dataframe.iterrows():
 		path = row['path-to-filename']
-		label = row['map_MNIST-label']
+		label = row['map-MNIST-label']
 		fullPath = os.path.join(dataset_path, path)
 		try:
 			img = Image.open(fullPath)
