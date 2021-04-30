@@ -61,10 +61,10 @@ def toArray(src_dataset, labels_dataset):
 	hasy_imgs_array = np.asarray(src_dataset)
 
 	print("np.asarray() ..")
-	hasy_labels_array = np.asarray(labels_hasy)
+	hasy_labels_array = np.asarray(labels_dataset)
 
 	print("np.asarray() .")
-	print("DONE! here is the report:\nIMAGES:", type(hasy_imgs_array), len(hasy_imgs_array), "\nLABELS: ", type(labels_array), len(labels_array))
+	print("DONE! here is the report:\nIMAGES:", type(hasy_imgs_array), len(hasy_imgs_array), "\nLABELS: ", type(hasy_labels_array), len(hasy_labels_array))
 
 	return hasy_imgs_array, hasy_labels_array
 
