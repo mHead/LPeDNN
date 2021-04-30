@@ -118,7 +118,7 @@ def make_x_y_split(source_img_dataset_array, train_perc):
 		#possibility of extension with others number (ex 2 if validation.. but we have to calculate those indexes among training ones)
 
 	#every test_index_ratio iterations, we keep an index for the test set
-	test_index_ratio = int(round(entire_dataset_len/effective_test_len))
+	test_index_ratio = int(round(entire_dataset_len/test_len))
 		
 	train_test_indexes = np.zeros(entire_dataset_len)
 	tot_train_indexes_no = 0
