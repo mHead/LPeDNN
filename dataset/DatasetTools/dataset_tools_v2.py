@@ -129,11 +129,11 @@ def make_x_y_split(source_img_dataset_array, train_perc):
 		
 		if i % test_index_ratio == 0:
 			#pick for test
-			tot_test_indexes_no = 0
+			tot_test_indexes_no += 1
 			train_test_indexes[i] = 0
 		else:
 			#pick for train
-			tot_train_indexes_no = 0
+			tot_train_indexes_no += 1
 			train_test_indexes[i] = 1
 	print(f"Indexes array created: {train_test_indexes} len: {len(train_test_indexes)}\n train_indexes: {tot_test_indexes_no}\n test indexes:{tot_test_indexes_no}\n\n")
 
@@ -165,7 +165,7 @@ def get_splits(hasy_imgs_array, hasy_labels_array, train_test_indexes):
 def print_extractOf_dataset(imgs_array, labels_array, numberOfImages):
 	plt.figure(figsize = (10, 10))
 	for i in range(int(round(numberOfImages))):
-		plt.subplot(m.sqrt(numberOfImages), m.sqrt(numberOfImages), i+1)
+		plt.subplot(math.sqrt(numberOfImages), math.sqrt(numberOfImages), i+1)
 		plt.xticks([])
 		plt.yticks([])
 		plt.grid(False)
