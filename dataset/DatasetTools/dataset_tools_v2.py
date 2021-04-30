@@ -35,11 +35,11 @@ OFFSET = 0
 def make_hasy_dataset(dataset_path, csv_dataframe):
 	images_hasy = []
 	labels_hasy = []
-	print(f"This is the dataset path: {dataset_path}")
+	#print(f"This is the dataset path: {dataset_path}")
 	for index, row in csv_dataframe.iterrows():
 		path = row['path-to-filename']
 		label = row['map-MNIST-label']
-		print(f"Joining {dataset_path} with {path}")
+		#print(f"Joining {dataset_path} with {path}")
 		fullPath = os.path.join(dataset_path, path)
 		try:
 			img = Image.open(fullPath)
@@ -50,7 +50,7 @@ def make_hasy_dataset(dataset_path, csv_dataframe):
 			print(f"File not found: {fullPath}")
 
 
-	print(f"DONE! loaded {len(images_hasy)} images in a numpyarray and {(lenlabels_hasy)} labels")
+	print(f"DONE! loaded {len(images_hasy)} images in a numpyarray and {len(labels_hasy)} labels")
 	print(f"IMAGES: {type(images_hasy)} {len(images_hasy)} \nLABELS: {type(labels_hasy)} {len(labels_hasy)}")
 	return images_hasy, labels_hasy
 
