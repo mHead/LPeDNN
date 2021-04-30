@@ -152,7 +152,7 @@ def get_splits(hasy_imgs_array, hasy_labels_array, train_test_indexes):
 			hasy_test_imgs_array.append(hasy_imgs_array[i])
 			hasy_test_labels_array.append(hasy_labels_array[i])
 		else: #pick for train
-			hasy_train_imgs_array.append(hasy_imgs_array_array[i])
+			hasy_train_imgs_array.append(hasy_imgs_array[i])
 			hasy_train_labels_array.append(hasy_labels_array[i])
 
 	hasy_train_imgs_array, hasy_train_labels_array = toArray(hasy_train_imgs_array, hasy_train_labels_array)
