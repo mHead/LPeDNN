@@ -127,7 +127,7 @@ l_offset = 10
 
 path_to_filename = r'/Users/head/Dropbox\ \(Politecnico\ Di\ Torino\ Studenti\)/Apps/LPeDNN/entireHasy_src_img'
 path_to_desktop = r'/Users/head/Desktop/entireHasy_src_img'
-relativeHasyPath = r'/entireHasy_src_img'
+relativeHasyPath = r'entireHasy_src_img'
 
 ##general info.csv [index, symbol_id, latex, map-MNIST-label, globalTotal]
 general_data = pd.DataFrame(np.inf, index=['index'], columns=['symbol_id', 'latex', 'map-MNIST-label', 'globalTotal']) #one line per letter
@@ -173,8 +173,8 @@ for slice in dataset_slices: #ie for each slice inside /by_field/ -> construct h
 
 			for file in os.listdir(img_folder):				
 				file_cnt += 1
-				path_png_for_csv = os.path.join(path_to_filename, slice+letter+file)
-				csv_path = os.path.join(relativeHasyPath, slice+letter+file)
+				path_png_for_csv = os.path.join(path_to_filename, slice+letter+"_"+file)
+				csv_path = os.path.join(relativeHasyPath, slice+letter+"_"+file)
 				#print(f"{path_png} {labels.get(letter) + s_offset} {letter} {labels.get(letter)} {slice}")
 				real_src_path = os.path.join(img_folder, file)
 				if image_preprocessing_mode:
