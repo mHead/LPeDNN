@@ -1,0 +1,115 @@
+Dependencies for Project 'sample', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\startup_LPC17xx.s)(0x60667D26)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 533" --pd "LPC175x_6x SETA 1"--list .\startup_lpc17xx.lst --xref -o .\startup_lpc17xx.o --depend .\startup_lpc17xx.d)
+F (.\sample.cpp)(0x608E74EF)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include-IC:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DLPC175x_6x -DSIMULATOR-o .\sample.o --omf_browse .\sample.crf --depend .\sample.d)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\LPC17xx.h)(0x58493F92)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\core_cm3.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_armcc.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\system_LPC17xx.h)(0x58493F92)
+I (GLCD/GLCD.h)(0x608E7327)
+I (TouchPanel/TouchPanel.h)(0x60667D26)
+I (timer/timer.h)(0x60667D26)
+I (setup/setup.h)(0x60667D26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E9122)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E9122)
+I (USBDevice/USBSerial/USBSerial.h)(0x608E798B)
+I (USBDevice/USBSerial/USBCDC.h)(0x608E757D)
+I (USBDevice/USBSerial/../USBDevice/USBEndpoints.h)(0x608E70D9)
+I (USBDevice/USBSerial/../USBDevice/USBEndpoints_LPC17_LPC23.h)(0x58DA0A28)
+I (USBDevice/USBSerial/../USBDevice/USBDescriptor.h)(0x58DA0A28)
+I (USBDevice/USBSerial/../USBDevice/USBDevice_Types.h)(0x58DA0A28)
+I (USBDevice/USBSerial/../USBDevice/USBDevice.h)(0x608E6EC6)
+I (USBDevice/USBSerial/../USBDevice/USBHAL.h)(0x608E70F4)
+I (USBDevice/USBSerial/CircBuffer.h)(0x58DA0A28)
+I (USBDevice/USBSerial/Callback.h)(0x608E797E)
+I (C:\Keil_v5\ARM\ARMCC\include\functional)(0x564D94AE)
+I (C:\Keil_v5\ARM\ARMCC\include\rw\_defs.h)(0x564D94AE)
+I (C:\Keil_v5\ARM\ARMCC\include\rw\_config.h)(0x564D94AE)
+I (C:\Keil_v5\ARM\ARMCC\include\rw\config.h)(0x5310A08C)
+F (.\core_cm3.c)(0x60667D26)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include-IC:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DLPC175x_6x -DSIMULATOR-o .\core_cm3.o --omf_browse .\core_cm3.crf --depend .\core_cm3.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
+F (.\system_LPC17xx.c)(0x60667D26)(-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include-IC:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DLPC175x_6x -DSIMULATOR-o .\system_lpc17xx.o --omf_browse .\system_lpc17xx.crf --depend .\system_lpc17xx.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\LPC17xx.h)(0x58493F92)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\core_cm3.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_armcc.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\system_LPC17xx.h)(0x58493F92)
+F (.\GLCD\AsciiLib.h)(0x60667D26)()
+F (.\GLCD\GLCD.h)(0x608E7327)()
+F (.\GLCD\AsciiLib.cpp)(0x60667D26)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include-IC:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DLPC175x_6x -DSIMULATOR-o .\asciilib.o --omf_browse .\asciilib.crf --depend .\asciilib.d)
+I (GLCD\AsciiLib.h)(0x60667D26)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E9122)
+F (.\GLCD\GLCD.cpp)(0x608E72F6)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include-IC:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DLPC175x_6x -DSIMULATOR-o .\glcd.o --omf_browse .\glcd.crf --depend .\glcd.d)
+I (GLCD\GLCD.h)(0x608E7327)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\LPC17xx.h)(0x58493F92)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\core_cm3.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_armcc.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\system_LPC17xx.h)(0x58493F92)
+I (GLCD\AsciiLib.h)(0x60667D26)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E9122)
+F (.\TouchPanel\TouchPanel.h)(0x60667D26)()
+F (.\TouchPanel\TouchPanel.cpp)(0x60667D26)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include-IC:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DLPC175x_6x -DSIMULATOR-o .\touchpanel.o --omf_browse .\touchpanel.crf --depend .\touchpanel.d)
+I (TouchPanel\../GLCD/GLCD.h)(0x608E7327)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\LPC17xx.h)(0x58493F92)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\core_cm3.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_armcc.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\system_LPC17xx.h)(0x58493F92)
+I (TouchPanel\../TouchPanel/TouchPanel.h)(0x60667D26)
+F (.\timer\timer.h)(0x60667D26)()
+F (.\timer\IRQ_timer.cpp)(0x608E7437)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include-IC:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DLPC175x_6x -DSIMULATOR-o .\irq_timer.o --omf_browse .\irq_timer.crf --depend .\irq_timer.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E9122)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\lpc17xx.h)(0x58493F92)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\core_cm3.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_armcc.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\system_LPC17xx.h)(0x58493F92)
+I (timer\timer.h)(0x60667D26)
+I (timer\../GLCD/GLCD.h)(0x608E7327)
+I (timer\../TouchPanel/TouchPanel.h)(0x60667D26)
+I (timer\../setup/setup.h)(0x60667D26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E9122)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E9122)
+F (.\timer\lib_timer.cpp)(0x60667D26)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include-IC:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DLPC175x_6x -DSIMULATOR-o .\lib_timer.o --omf_browse .\lib_timer.crf --depend .\lib_timer.d)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\lpc17xx.h)(0x58493F92)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\core_cm3.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_armcc.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\system_LPC17xx.h)(0x58493F92)
+I (timer\timer.h)(0x60667D26)
+F (.\setup\setup.h)(0x60667D26)()
+F (.\setup\setup.cpp)(0x608E7437)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include-IC:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="533" -DLPC175x_6x -DSIMULATOR-o .\setup.o --omf_browse .\setup.crf --depend .\setup.d)
+I (setup\setup.h)(0x60667D26)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\LPC17xx.h)(0x58493F92)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\core_cm3.h)(0x5E8F3392)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E9122)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_version.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_compiler.h)(0x5E836932)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_armcc.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\mpu_armv7.h)(0x5E8F3392)
+I (C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\system_LPC17xx.h)(0x58493F92)
+I (setup\../TouchPanel/TouchPanel.h)(0x60667D26)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E9122)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E9122)
+I (setup\../GLCD/GLCD.h)(0x608E7327)
+I (setup\../timer/timer.h)(0x60667D26)

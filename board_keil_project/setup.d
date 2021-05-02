@@ -1,0 +1,15 @@
+.\setup.o: setup\setup.cpp
+.\setup.o: setup\setup.h
+.\setup.o: C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\LPC17xx.h
+.\setup.o: C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\core_cm3.h
+.\setup.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\setup.o: C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_version.h
+.\setup.o: C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_compiler.h
+.\setup.o: C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\cmsis_armcc.h
+.\setup.o: C:\Users\IlPaguro\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Include\mpu_armv7.h
+.\setup.o: C:\Users\IlPaguro\AppData\Local\Arm\Packs\Keil\LPC1700_DFP\2.6.0\Device\Include\system_LPC17xx.h
+.\setup.o: setup\../TouchPanel/TouchPanel.h
+.\setup.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\setup.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\setup.o: setup\../GLCD/GLCD.h
+.\setup.o: setup\../timer/timer.h
