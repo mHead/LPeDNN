@@ -41,5 +41,4 @@ Here's a basic example of its use: https://os.mbed.com/handbook/USBSerial
 ### Serial Read
 
 The PC's side of the communication is based on this library: https://github.com/ZainUlMustafa/Connect-And-Use-Arduino-via-Cpp-Software-Made-In-Any-IDE/tree/master/Arduino2PC_SC (only main.cpp, SerialPort.cpp and SerialPort.h are important).
-I removed the write function because it was not used by the pc, which just has to read.
 IMPORTANT: the main.cpp assumes that the communication takes place in the port COM3, so if things do not work verify via the device manager that the port is actually that one
