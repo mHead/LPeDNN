@@ -61,10 +61,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\rugge\Documents\development\LowPowerNeuralNetwork
+CMAKE_SOURCE_DIR = "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\rugge\Documents\development\LowPowerNeuralNetwork\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/LowPowerNeuralNetwork.dir/depend.make
@@ -77,29 +77,29 @@ include CMakeFiles/LowPowerNeuralNetwork.dir/flags.make
 
 CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.obj: CMakeFiles/LowPowerNeuralNetwork.dir/flags.make
 CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rugge\Documents\development\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LowPowerNeuralNetwork.dir\main.cpp.obj -c C:\Users\rugge\Documents\development\LowPowerNeuralNetwork\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LowPowerNeuralNetwork.dir\main.cpp.obj -c "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\main.cpp"
 
 CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rugge\Documents\development\LowPowerNeuralNetwork\main.cpp > CMakeFiles\LowPowerNeuralNetwork.dir\main.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\main.cpp" > CMakeFiles\LowPowerNeuralNetwork.dir\main.cpp.i
 
 CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rugge\Documents\development\LowPowerNeuralNetwork\main.cpp -o CMakeFiles\LowPowerNeuralNetwork.dir\main.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\main.cpp" -o CMakeFiles\LowPowerNeuralNetwork.dir\main.cpp.s
 
 CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.obj: CMakeFiles/LowPowerNeuralNetwork.dir/flags.make
 CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.obj: ../DeepNeuralNetwork.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rugge\Documents\development\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LowPowerNeuralNetwork.dir\DeepNeuralNetwork.cpp.obj -c C:\Users\rugge\Documents\development\LowPowerNeuralNetwork\DeepNeuralNetwork.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LowPowerNeuralNetwork.dir\DeepNeuralNetwork.cpp.obj -c "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\DeepNeuralNetwork.cpp"
 
 CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rugge\Documents\development\LowPowerNeuralNetwork\DeepNeuralNetwork.cpp > CMakeFiles\LowPowerNeuralNetwork.dir\DeepNeuralNetwork.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\DeepNeuralNetwork.cpp" > CMakeFiles\LowPowerNeuralNetwork.dir\DeepNeuralNetwork.cpp.i
 
 CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rugge\Documents\development\LowPowerNeuralNetwork\DeepNeuralNetwork.cpp -o CMakeFiles\LowPowerNeuralNetwork.dir\DeepNeuralNetwork.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\DeepNeuralNetwork.cpp" -o CMakeFiles\LowPowerNeuralNetwork.dir\DeepNeuralNetwork.cpp.s
 
 # Object files for target LowPowerNeuralNetwork
 LowPowerNeuralNetwork_OBJECTS = \
@@ -115,7 +115,7 @@ LowPowerNeuralNetwork.exe: CMakeFiles/LowPowerNeuralNetwork.dir/build.make
 LowPowerNeuralNetwork.exe: CMakeFiles/LowPowerNeuralNetwork.dir/linklibs.rsp
 LowPowerNeuralNetwork.exe: CMakeFiles/LowPowerNeuralNetwork.dir/objects1.rsp
 LowPowerNeuralNetwork.exe: CMakeFiles/LowPowerNeuralNetwork.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\rugge\Documents\development\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable LowPowerNeuralNetwork.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable LowPowerNeuralNetwork.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\LowPowerNeuralNetwork.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +128,6 @@ CMakeFiles/LowPowerNeuralNetwork.dir/clean:
 .PHONY : CMakeFiles/LowPowerNeuralNetwork.dir/clean
 
 CMakeFiles/LowPowerNeuralNetwork.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\rugge\Documents\development\LowPowerNeuralNetwork C:\Users\rugge\Documents\development\LowPowerNeuralNetwork C:\Users\rugge\Documents\development\LowPowerNeuralNetwork\cmake-build-debug C:\Users\rugge\Documents\development\LowPowerNeuralNetwork\cmake-build-debug C:\Users\rugge\Documents\development\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles\LowPowerNeuralNetwork.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles\LowPowerNeuralNetwork.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/LowPowerNeuralNetwork.dir/depend
 

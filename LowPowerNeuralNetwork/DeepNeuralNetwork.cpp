@@ -48,8 +48,13 @@ int DeepNeuralNetwork::inference(const int image[][INPUT_IMAGE_SIZE]) {
     for (int i = 0; i < DENSE_OUTPUT_SIZE; i++) {
         std::cout << "Neuron " << i << ": " << dense_output[i] << std::endl;
     }
-
-    std::cout << "Inference: " << maxIndex << std::endl;
+    char prediction;
+    if (maxIndex < 10)
+        prediction = maxIndex + '0';
+    else
+        prediction = maxIndex + 'A';
+    std::cout << "Inference neuron: " << maxIndex << std::endl;
+    std::cout << "Inference letter: " << prediction << std::endl;
     return maxIndex;
 }
 

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/rugge/Documents/development/LowPowerNeuralNetwork/DeepNeuralNetwork.cpp" "C:/Users/rugge/Documents/development/LowPowerNeuralNetwork/cmake-build-debug/CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.obj"
-  "C:/Users/rugge/Documents/development/LowPowerNeuralNetwork/main.cpp" "C:/Users/rugge/Documents/development/LowPowerNeuralNetwork/cmake-build-debug/CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.obj"
+  "C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.cpp" "C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/cmake-build-debug/CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.obj"
+  "C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/main.cpp" "C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/cmake-build-debug/CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
