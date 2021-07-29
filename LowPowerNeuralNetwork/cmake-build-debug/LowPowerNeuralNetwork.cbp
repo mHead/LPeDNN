@@ -86,6 +86,12 @@
 		<Unit filename="C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.h">
 			<Option target="LowPowerNeuralNetwork"/>
 		</Unit>
+		<Unit filename="C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/Test/DNNTest.cpp">
+			<Option target="LowPowerNeuralNetwork"/>
+		</Unit>
+		<Unit filename="C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/Test/DNNTest.h">
+			<Option target="LowPowerNeuralNetwork"/>
+		</Unit>
 		<Unit filename="C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/main.cpp">
 			<Option target="LowPowerNeuralNetwork"/>
 		</Unit>

@@ -1,6 +1,8 @@
 #include <iostream>
 #include "DeepNeuralNetwork.h"
 
+#include "Test/DNNTest.h"
+
 int main() {
     DeepNeuralNetwork dnn;
     int sampleA[INPUT_IMAGE_SIZE][INPUT_IMAGE_SIZE] = {
@@ -65,8 +67,13 @@ int main() {
             {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
     };
 
-    int prediction = dnn.inference(sampleA);
-    int prediction2 = dnn.inference(sampleA2);
+    //int prediction = dnn.inference(sampleA);
+    //int prediction2 = dnn.inference(sampleA2);
 
+    DNNTest test;
+
+    test.test_conv2d();
+    test.test_maxpool2d();
+    test.test_dense();
     return 0;
 }

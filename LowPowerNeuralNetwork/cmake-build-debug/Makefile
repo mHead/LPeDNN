@@ -168,6 +168,33 @@ DeepNeuralNetwork.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LowPowerNeuralNetwork.dir\build.make CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.s
 .PHONY : DeepNeuralNetwork.cpp.s
 
+Test/DNNTest.obj: Test/DNNTest.cpp.obj
+
+.PHONY : Test/DNNTest.obj
+
+# target to build an object file
+Test/DNNTest.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LowPowerNeuralNetwork.dir\build.make CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.obj
+.PHONY : Test/DNNTest.cpp.obj
+
+Test/DNNTest.i: Test/DNNTest.cpp.i
+
+.PHONY : Test/DNNTest.i
+
+# target to preprocess a source file
+Test/DNNTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LowPowerNeuralNetwork.dir\build.make CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.i
+.PHONY : Test/DNNTest.cpp.i
+
+Test/DNNTest.s: Test/DNNTest.cpp.s
+
+.PHONY : Test/DNNTest.s
+
+# target to generate assembly for a file
+Test/DNNTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LowPowerNeuralNetwork.dir\build.make CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.s
+.PHONY : Test/DNNTest.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -207,6 +234,9 @@ help:
 	@echo ... DeepNeuralNetwork.obj
 	@echo ... DeepNeuralNetwork.i
 	@echo ... DeepNeuralNetwork.s
+	@echo ... Test/DNNTest.obj
+	@echo ... Test/DNNTest.i
+	@echo ... Test/DNNTest.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

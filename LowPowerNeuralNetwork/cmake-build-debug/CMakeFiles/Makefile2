@@ -92,12 +92,12 @@ clean: CMakeFiles/LowPowerNeuralNetwork.dir/clean
 CMakeFiles/LowPowerNeuralNetwork.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LowPowerNeuralNetwork.dir\build.make CMakeFiles/LowPowerNeuralNetwork.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LowPowerNeuralNetwork.dir\build.make CMakeFiles/LowPowerNeuralNetwork.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target LowPowerNeuralNetwork"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4 "Built target LowPowerNeuralNetwork"
 .PHONY : CMakeFiles/LowPowerNeuralNetwork.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LowPowerNeuralNetwork.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles" 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/LowPowerNeuralNetwork.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/LowPowerNeuralNetwork.dir/rule

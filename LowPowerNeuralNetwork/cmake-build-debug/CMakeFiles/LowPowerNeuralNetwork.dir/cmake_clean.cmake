@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.obj"
+  "CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.obj"
   "CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.obj"
   "LowPowerNeuralNetwork.exe"
   "LowPowerNeuralNetwork.exe.manifest"

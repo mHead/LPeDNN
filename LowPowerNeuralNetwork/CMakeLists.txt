@@ -3,4 +3,4 @@ project(LowPowerNeuralNetwork)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(LowPowerNeuralNetwork main.cpp DeepNeuralNetwork.cpp DeepNeuralNetwork.h)
+add_executable(LowPowerNeuralNetwork main.cpp DeepNeuralNetwork.cpp DeepNeuralNetwork.h Test/DNNTest.cpp Test/DNNTest.h)

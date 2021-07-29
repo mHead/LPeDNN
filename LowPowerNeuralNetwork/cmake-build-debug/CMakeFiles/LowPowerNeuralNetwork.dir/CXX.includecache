@@ -14,9 +14,17 @@ algorithm
 limits
 -
 
+C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/Test/DNNTest.h
+../DeepNeuralNetwork.h
+C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.h
+cassert
+-
+
 C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/main.cpp
 iostream
 -
 DeepNeuralNetwork.h
 C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.h
+Test/DNNTest.h
+C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/Test/DNNTest.h
 
