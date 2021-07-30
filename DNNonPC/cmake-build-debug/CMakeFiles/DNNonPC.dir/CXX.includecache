@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/DeepNeuralNetwork.h
+iostream
+-
+algorithm
+-
+limits
+-
+
+C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/SerialPort.h
+windows.h
+-
+stdio.h
+-
+stdlib.h
+-
+
+C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/main.cpp
+iostream
+-
+string
+-
+stdlib.h
+-
+SerialPort.h
+C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/SerialPort.h
+DeepNeuralNetwork.h
+C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/DeepNeuralNetwork.h
+

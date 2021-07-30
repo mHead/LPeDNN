@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/rugge/Documents/development/SerialRead/SerialPort.cpp
-SerialPort.h
-C:/Users/rugge/Documents/development/SerialRead/SerialPort.h
-
-C:/Users/rugge/Documents/development/SerialRead/SerialPort.h
+C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/SerialRead/SerialPort.h
 windows.h
 -
 stdio.h
@@ -18,7 +14,7 @@ stdio.h
 stdlib.h
 -
 
-C:/Users/rugge/Documents/development/SerialRead/main.cpp
+C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/SerialRead/main.cpp
 iostream
 -
 string
@@ -26,5 +22,5 @@ string
 stdlib.h
 -
 SerialPort.h
-C:/Users/rugge/Documents/development/SerialRead/SerialPort.h
+C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/SerialRead/SerialPort.h
 

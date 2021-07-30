@@ -18,6 +18,7 @@ int main() {
     else
         std::cout << "Connection failed\n";
 
+    std::cout << "Reading next character.." << std::endl;
     while (landtigerSerialPort.isConnected()) {
         nR = landtigerSerialPort.readSerialPort(serialMessage, MAX_DATA_LENGTH);
         if (nR > 0) {
@@ -36,21 +37,26 @@ int main() {
                     if (i % 28 == 0) {
                         k++;
                         j=0;
-                        std::cout << "\n";
+                        //std::cout << "\n";
                     }
                     well[k][j] = mat[i];
-                    printf("%d", (int)mat[i]);
+                    //printf("%d", (int)mat[i]);
                     j++;
                 }
-                printf("\n");
-                printf("\n");
+                //printf("\n");
+                //printf("\n");
 
+                std::cout << "Character received:" << std::endl;
                 for (int i=0; i<28; i++) {
                     for (int j = 0; j < 28; j++) {
                         printf("%d", (int) well[i][j]);
                     }
                     printf("\n");
                 }
+
+                ind = 0;
+                std::cout << '\n';
+                std::cout << "Reading next character.." << std::endl;
             }
         }
     }

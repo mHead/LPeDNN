@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/rugge/Documents/development/SerialRead/SerialPort.cpp" "C:/Users/rugge/Documents/development/SerialRead/cmake-build-debug/CMakeFiles/SerialRead.dir/SerialPort.cpp.obj"
-  "C:/Users/rugge/Documents/development/SerialRead/main.cpp" "C:/Users/rugge/Documents/development/SerialRead/cmake-build-debug/CMakeFiles/SerialRead.dir/main.cpp.obj"
+  "C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/SerialRead/SerialPort.cpp" "C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/SerialRead/cmake-build-debug/CMakeFiles/SerialRead.dir/SerialPort.cpp.obj"
+  "C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/SerialRead/main.cpp" "C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/SerialRead/cmake-build-debug/CMakeFiles/SerialRead.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

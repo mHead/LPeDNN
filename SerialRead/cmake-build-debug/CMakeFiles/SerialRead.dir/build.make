@@ -61,10 +61,10 @@ RM = "C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\rugge\Documents\development\SerialRead
+CMAKE_SOURCE_DIR = "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\rugge\Documents\development\SerialRead\cmake-build-debug
+CMAKE_BINARY_DIR = "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SerialRead.dir/depend.make
@@ -77,29 +77,29 @@ include CMakeFiles/SerialRead.dir/flags.make
 
 CMakeFiles/SerialRead.dir/main.cpp.obj: CMakeFiles/SerialRead.dir/flags.make
 CMakeFiles/SerialRead.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rugge\Documents\development\SerialRead\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SerialRead.dir/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SerialRead.dir\main.cpp.obj -c C:\Users\rugge\Documents\development\SerialRead\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SerialRead.dir/main.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SerialRead.dir\main.cpp.obj -c "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead\main.cpp"
 
 CMakeFiles/SerialRead.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SerialRead.dir/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rugge\Documents\development\SerialRead\main.cpp > CMakeFiles\SerialRead.dir\main.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead\main.cpp" > CMakeFiles\SerialRead.dir\main.cpp.i
 
 CMakeFiles/SerialRead.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SerialRead.dir/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rugge\Documents\development\SerialRead\main.cpp -o CMakeFiles\SerialRead.dir\main.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead\main.cpp" -o CMakeFiles\SerialRead.dir\main.cpp.s
 
 CMakeFiles/SerialRead.dir/SerialPort.cpp.obj: CMakeFiles/SerialRead.dir/flags.make
 CMakeFiles/SerialRead.dir/SerialPort.cpp.obj: ../SerialPort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rugge\Documents\development\SerialRead\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SerialRead.dir/SerialPort.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SerialRead.dir\SerialPort.cpp.obj -c C:\Users\rugge\Documents\development\SerialRead\SerialPort.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SerialRead.dir/SerialPort.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SerialRead.dir\SerialPort.cpp.obj -c "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead\SerialPort.cpp"
 
 CMakeFiles/SerialRead.dir/SerialPort.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SerialRead.dir/SerialPort.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rugge\Documents\development\SerialRead\SerialPort.cpp > CMakeFiles\SerialRead.dir\SerialPort.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead\SerialPort.cpp" > CMakeFiles\SerialRead.dir\SerialPort.cpp.i
 
 CMakeFiles/SerialRead.dir/SerialPort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SerialRead.dir/SerialPort.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rugge\Documents\development\SerialRead\SerialPort.cpp -o CMakeFiles\SerialRead.dir\SerialPort.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead\SerialPort.cpp" -o CMakeFiles\SerialRead.dir\SerialPort.cpp.s
 
 # Object files for target SerialRead
 SerialRead_OBJECTS = \
@@ -115,7 +115,7 @@ SerialRead.exe: CMakeFiles/SerialRead.dir/build.make
 SerialRead.exe: CMakeFiles/SerialRead.dir/linklibs.rsp
 SerialRead.exe: CMakeFiles/SerialRead.dir/objects1.rsp
 SerialRead.exe: CMakeFiles/SerialRead.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\rugge\Documents\development\SerialRead\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable SerialRead.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable SerialRead.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SerialRead.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +128,6 @@ CMakeFiles/SerialRead.dir/clean:
 .PHONY : CMakeFiles/SerialRead.dir/clean
 
 CMakeFiles/SerialRead.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\rugge\Documents\development\SerialRead C:\Users\rugge\Documents\development\SerialRead C:\Users\rugge\Documents\development\SerialRead\cmake-build-debug C:\Users\rugge\Documents\development\SerialRead\cmake-build-debug C:\Users\rugge\Documents\development\SerialRead\cmake-build-debug\CMakeFiles\SerialRead.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead\cmake-build-debug" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead\cmake-build-debug" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\SerialRead\cmake-build-debug\CMakeFiles\SerialRead.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/SerialRead.dir/depend
 

@@ -1,3 +1,3 @@
-C:/Users/rugge/Documents/development/SerialRead/cmake-build-debug/CMakeFiles/SerialRead.dir
-C:/Users/rugge/Documents/development/SerialRead/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/rugge/Documents/development/SerialRead/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/SerialRead/cmake-build-debug/CMakeFiles/SerialRead.dir
+C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/SerialRead/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/SerialRead/cmake-build-debug/CMakeFiles/rebuild_cache.dir
