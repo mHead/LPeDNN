@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/rugge/Documents/development/SerialRead/SerialPort.cpp
+SerialPort.h
+C:/Users/rugge/Documents/development/SerialRead/SerialPort.h
+
+C:/Users/rugge/Documents/development/SerialRead/SerialPort.h
+windows.h
+-
+stdio.h
+-
+stdlib.h
+-
+
+C:/Users/rugge/Documents/development/SerialRead/main.cpp
+iostream
+-
+string
+-
+stdlib.h
+-
+SerialPort.h
+C:/Users/rugge/Documents/development/SerialRead/SerialPort.h
+
