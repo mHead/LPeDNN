@@ -56,6 +56,8 @@ public:
     void maxpool2d(const float input[][MAX_POOL_INPUT_SIZE], float output[][MAX_POOL_OUTPUT_SIZE]);
     void flatten(const float input[][FLATTEN_INPUT_SIZE], float *output);
     void dense(const float *input, float *output);
+
+    static char label_to_char(int label);
 //public:
     DeepNeuralNetwork();
 

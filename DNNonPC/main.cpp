@@ -59,6 +59,7 @@ int main() {
                 std::cout << '\n';
                 std::cout << "Trying to predict the character.." << std::endl;
                 int prediction = dnn.inference(well);
+                std::cout << "Predicted: " << DeepNeuralNetwork::label_to_char(prediction) << std::endl;
 
                 ind = 0;
                 std::cout << '\n';
