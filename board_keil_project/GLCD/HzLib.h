@@ -39,3 +39,4 @@ void GetGBKCode(unsigned char* pBuffer,unsigned char * c);
 
 
 
+

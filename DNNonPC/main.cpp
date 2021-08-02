@@ -15,6 +15,10 @@ int main() {
     int nR;
     int ind = 0;
     char curr[2] = "0";
+    int nextIsPrediction = 0;
+    char predictionChar[3] = "00";
+    int on_board_prediction = -1;
+
     SerialPort landtigerSerialPort(port);
     if (landtigerSerialPort.isConnected())
         std::cout << "Connection established\n";
@@ -28,14 +32,28 @@ int main() {
             //std::cout << "Read characters: " << nR << "\n";
             for (int i = 0; i < nR; i++) {
                 curr[0] = serialMessage[i];
-                mat[ind] = atoi(curr);
-                ind++;
+                if (nextIsPrediction > 0) {
+                    if (nextIsPrediction == 2)
+                        predictionChar[0] = serialMessage[i];
+                    else if (nextIsPrediction == 1) {
+                        predictionChar[1] = serialMessage[i];
+                        on_board_prediction = atoi(predictionChar);
+                        std::cout << "On board prediction: " << DeepNeuralNetwork::label_to_char(on_board_prediction) << std::endl;
+                        std::cout << "Reading next character.." << std::endl;
+                    }
+
+                    nextIsPrediction--;
+                } else {
+                    mat[ind] = atoi(curr);
+                    ind++;
+                }
             }
             //serialMessage[nR] = '\0';
             //std::cout << serialMessage;
             int j = 0;
             int k = 0;
-            if (ind == 784) {
+            if (ind >= 784) {
+                nextIsPrediction = 2;
                 for (int i = 0; i < 784; i++) {
                     if (i % 28 == 0) {
                         k++;
@@ -63,7 +81,7 @@ int main() {
 
                 ind = 0;
                 std::cout << '\n';
-                std::cout << "Reading next character.." << std::endl;
+
             }
         }
     }

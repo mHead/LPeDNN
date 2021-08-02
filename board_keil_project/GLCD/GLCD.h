@@ -4,8 +4,8 @@
 **
 **--------------File Info-------------------------------------------------------------------------------
 ** File name:			GLCD.h
-** Descriptions:		Has been tested SSD1289¡¢ILI9320¡¢R61505U¡¢SSD1298¡¢ST7781¡¢SPFD5408B¡¢ILI9325¡¢ILI9328¡¢
-**						HX8346A¡¢HX8347A
+** Descriptions:		Has been tested SSD1289ï¿½ï¿½ILI9320ï¿½ï¿½R61505Uï¿½ï¿½SSD1298ï¿½ï¿½ST7781ï¿½ï¿½SPFD5408Bï¿½ï¿½ILI9325ï¿½ï¿½ILI9328ï¿½ï¿½
+**						HX8346Aï¿½ï¿½HX8347A
 **------------------------------------------------------------------------------------------------------
 ** Created by:			AVRman
 ** Created date:		2012-3-10
@@ -68,17 +68,18 @@
 #define Red            0xF800
 #define Magenta        0xF81F
 #define Green          0x07E0
+#define Green2		   0x1641
 #define Cyan           0x7FFF
 #define Yellow         0xFFE0
 
 /******************************************************************************
 * Function Name  : RGB565CONVERT
-* Description    : 24Î»×ª»»16Î»
+* Description    : 24Î»×ªï¿½ï¿½16Î»
 * Input          : - red: R
 *                  - green: G 
 *				   - blue: B
 * Output         : None
-* Return         : RGB ÑÕÉ«Öµ
+* Return         : RGB ï¿½ï¿½É«Öµ
 * Attention		 : None
 *******************************************************************************/
 #define RGB565CONVERT(red, green, blue)\
@@ -92,11 +93,14 @@ void LCD_Clear(uint16_t Color);
 uint16_t LCD_GetPoint(uint16_t Xpos,uint16_t Ypos);
 void LCD_SetPoint(uint16_t Xpos,uint16_t Ypos,uint16_t point);
 void LCD_DrawLine( uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1 , uint16_t color );
-void PutChar( uint16_t Xpos, uint16_t Ypos, uint8_t ASCI, uint16_t charColor, uint16_t bkColor );
-void GUI_Text(uint16_t Xpos, uint16_t Ypos, uint8_t *str,uint16_t Color, uint16_t bkColor);
+void PutChar( uint16_t Xpos, uint16_t Ypos, uint8_t ASCI, uint16_t charColor, uint16_t bkColor, int size ); //scrivo un carattere
+void GUI_Text(uint16_t Xpos, uint16_t Ypos, uint8_t *str,uint16_t Color, uint16_t bkColor, int size); //scrivo una stringa
+void PutChinese(uint16_t Xpos,uint16_t Ypos,uint8_t *str,uint16_t Color,uint16_t bkColor);
+void GUI_Chinese(uint16_t Xpos, uint16_t Ypos, uint8_t *str,uint16_t Color, uint16_t bkColor);
 
 #endif 
 
 /*********************************************************************************************************
       END FILE
 *********************************************************************************************************/
+
