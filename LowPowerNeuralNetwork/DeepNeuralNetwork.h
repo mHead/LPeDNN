@@ -5,7 +5,7 @@
  * Default Hyperparameters for a test set accuracy equals to 95.61%
  * */
 #define INPUT_IMAGE_SIZE 28
-#define CONV2D_SIZE 7
+#define CONV2D_SIZE 3
 //#define CONV2D_SIZE 2
 #define MAX_POOL_SIZE 2
 #define DROPOUT_RATE 0.25
@@ -14,25 +14,42 @@
 /**
  * Layers inputs-outputs dimensions (each dimension refers to a single dimension -> matrix are squares)
  */
-#define CONV2D_INPUT_SIZE INPUT_IMAGE_SIZE
+#define CONV2D_1_INPUT_SIZE INPUT_IMAGE_SIZE
 //#define CONV2D_INPUT_SIZE 3
-//#define CONV2D_OUTPUT_SIZE 22
-#define CONV2D_OUTPUT_SIZE CONV2D_INPUT_SIZE-CONV2D_SIZE+1
+//#define CONV2D_1_OUTPUT_SIZE 22
+#define CONV2D_1_OUTPUT_SIZE CONV2D_1_INPUT_SIZE-CONV2D_SIZE+1
+#define CONV2D_1_FILTERS 4
 
-#define MAX_POOL_INPUT_SIZE CONV2D_OUTPUT_SIZE
+#define MAX_POOL_1_INPUT_SIZE CONV2D_1_OUTPUT_SIZE
 //#define MAX_POOL_INPUT_SIZE 4
-#define MAX_POOL_OUTPUT_SIZE 11
+#define MAX_POOL_1_OUTPUT_SIZE 13
 
-#define FLATTEN_INPUT_SIZE MAX_POOL_OUTPUT_SIZE
-#define FLATTEN_OUTPUT_SIZE FLATTEN_INPUT_SIZE * FLATTEN_INPUT_SIZE
+#define CONV2D_2_INPUT_SIZE MAX_POOL_1_OUTPUT_SIZE
+#define CONV2D_2_OUTPUT_SIZE CONV2D_2_INPUT_SIZE-CONV2D_SIZE+1
+#define CONV2D_2_FILTERS 8
 
-#define DENSE_INPUT_SIZE FLATTEN_OUTPUT_SIZE
+#define MAX_POOL_2_INPUT_SIZE CONV2D_2_OUTPUT_SIZE
+#define MAX_POOL_2_OUTPUT_SIZE 5
+
+#define CONV2D_3_INPUT_SIZE MAX_POOL_2_OUTPUT_SIZE
+#define CONV2D_3_OUTPUT_SIZE CONV2D_3_INPUT_SIZE-CONV2D_SIZE+1
+#define CONV2D_3_FILTERS 16
+
+#define MAX_POOL_3_INPUT_SIZE CONV2D_3_OUTPUT_SIZE
+#define MAX_POOL_3_OUTPUT_SIZE 1
+
+#define FLATTEN_INPUT_SIZE MAX_POOL_3_OUTPUT_SIZE
+#define FLATTEN_OUTPUT_SIZE FLATTEN_INPUT_SIZE * CONV2D_3_FILTERS
+
+#define DENSE_1_INPUT_SIZE FLATTEN_OUTPUT_SIZE
 //#define DENSE_INPUT_SIZE 5
-
-#define DENSE_OUTPUT_SIZE N_OUT_CLASSES
+#define DENSE_1_OUTPUT_SIZE 128
 //#define DENSE_OUTPUT_SIZE 3
 
-#define DENSE_WEIGHTS_LEN DENSE_INPUT_SIZE * DENSE_OUTPUT_SIZE
+#define DENSE_2_INPUT_SIZE DENSE_1_OUTPUT_SIZE
+#define DENSE_2_OUTPUT_SIZE N_OUT_CLASSES
+
+//#define DENSE_WEIGHTS_LEN DENSE_INPUT_SIZE * DENSE_OUTPUT_SIZE
 
 
 #include <iostream>
@@ -45,17 +62,35 @@
 class DeepNeuralNetwork {
 //private:
 public:
-    float conv2d_output[CONV2D_OUTPUT_SIZE][CONV2D_OUTPUT_SIZE];
-    float maxpool_output[MAX_POOL_OUTPUT_SIZE][MAX_POOL_OUTPUT_SIZE];
+    float conv2d_1_output[CONV2D_1_FILTERS][CONV2D_1_OUTPUT_SIZE][CONV2D_1_OUTPUT_SIZE];
+    float maxpool_1_output[CONV2D_1_FILTERS][MAX_POOL_1_OUTPUT_SIZE][MAX_POOL_1_OUTPUT_SIZE];
+
+    float conv2d_2_output[CONV2D_2_FILTERS][CONV2D_2_OUTPUT_SIZE][CONV2D_2_OUTPUT_SIZE];
+    float maxpool_2_output[CONV2D_2_FILTERS][MAX_POOL_2_OUTPUT_SIZE][MAX_POOL_2_OUTPUT_SIZE];
+
+    float conv2d_3_output[CONV2D_3_FILTERS][CONV2D_3_OUTPUT_SIZE][CONV2D_3_OUTPUT_SIZE];
+    float maxpool_3_output[CONV2D_3_FILTERS][MAX_POOL_3_OUTPUT_SIZE][MAX_POOL_3_OUTPUT_SIZE];
+
     float flatten_output[FLATTEN_OUTPUT_SIZE];
-    float dense_output[DENSE_OUTPUT_SIZE];
+    float dense_1_output[DENSE_1_OUTPUT_SIZE];
+    float dense_2_output[DENSE_2_OUTPUT_SIZE];
 
     float leaky_relu(float x);
 
-    void conv2d(const float input[][CONV2D_INPUT_SIZE], const float kernel[][CONV2D_SIZE], float output[][CONV2D_OUTPUT_SIZE]);
-    void maxpool2d(const float input[][MAX_POOL_INPUT_SIZE], float output[][MAX_POOL_OUTPUT_SIZE]);
-    void flatten(const float input[][FLATTEN_INPUT_SIZE], float *output);
-    void dense(const float *input, float *output);
+    void conv2d_1(const float input[][CONV2D_1_INPUT_SIZE], const float kernel[][CONV2D_SIZE][CONV2D_SIZE], float output[][CONV2D_1_OUTPUT_SIZE][CONV2D_1_OUTPUT_SIZE]);
+    void maxpool2d_1(const float input[][MAX_POOL_1_INPUT_SIZE][MAX_POOL_1_INPUT_SIZE], float output[][MAX_POOL_1_OUTPUT_SIZE][MAX_POOL_1_OUTPUT_SIZE]);
+
+    void conv2d_2(const float input[][CONV2D_2_INPUT_SIZE][CONV2D_2_INPUT_SIZE], const float kernel[][CONV2D_2_FILTERS][CONV2D_SIZE][CONV2D_SIZE], float output[][CONV2D_2_OUTPUT_SIZE][CONV2D_2_OUTPUT_SIZE]);
+    void maxpool2d_2(const float input[][MAX_POOL_2_INPUT_SIZE][MAX_POOL_2_INPUT_SIZE], float output[][MAX_POOL_2_OUTPUT_SIZE][MAX_POOL_2_OUTPUT_SIZE]);
+
+    void conv2d_3(const float input[][CONV2D_3_INPUT_SIZE][CONV2D_3_INPUT_SIZE], const float kernel[][CONV2D_3_FILTERS][CONV2D_SIZE][CONV2D_SIZE], float output[][CONV2D_3_OUTPUT_SIZE][CONV2D_3_OUTPUT_SIZE]);
+    void maxpool2d_3(const float input[][MAX_POOL_3_INPUT_SIZE][MAX_POOL_3_INPUT_SIZE], float output[][MAX_POOL_3_OUTPUT_SIZE][MAX_POOL_3_OUTPUT_SIZE]);
+
+    void flatten(const float input[][FLATTEN_INPUT_SIZE][FLATTEN_INPUT_SIZE], float *output);
+    void dense_1(const float *input, float *output);
+    void dense_2(const float *input, float *output);
+
+    static char label_to_char(int label);
 //public:
     DeepNeuralNetwork();
 
