@@ -1,3 +1,3 @@
-C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/cmake-build-debug/CMakeFiles/DNNonPC.dir
-C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/rugge/Desktop/dnn/LPeDNN/DNNonPC/cmake-build-debug/CMakeFiles/DNNonPC.dir
+C:/Users/rugge/Desktop/dnn/LPeDNN/DNNonPC/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/rugge/Desktop/dnn/LPeDNN/DNNonPC/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -6,5 +6,27 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/rugge/Desktop/dnn/LPeDNN/LowPowerNeuralNetwork/Test/DNNTest.cpp
+C:/Users/rugge/Desktop/dnn/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.cpp
+DeepNeuralNetwork.h
+C:/Users/rugge/Desktop/dnn/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.h
+
+C:/Users/rugge/Desktop/dnn/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.h
+iostream
+-
+algorithm
+-
+limits
+-
+
+C:/Users/rugge/Desktop/dnn/LPeDNN/LowPowerNeuralNetwork/Test/DNNTest.h
+
+C:/Users/rugge/Desktop/dnn/LPeDNN/LowPowerNeuralNetwork/main.cpp
+iostream
+-
+cstdio
+-
+DeepNeuralNetwork.h
+C:/Users/rugge/Desktop/dnn/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.h
+Test/DNNTest.h
+C:/Users/rugge/Desktop/dnn/LPeDNN/LowPowerNeuralNetwork/Test/DNNTest.h
 

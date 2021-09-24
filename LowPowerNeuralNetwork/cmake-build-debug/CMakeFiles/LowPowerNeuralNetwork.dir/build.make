@@ -52,10 +52,10 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\Programs\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\Programs\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,41 +78,41 @@ include CMakeFiles/LowPowerNeuralNetwork.dir/flags.make
 CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.obj: CMakeFiles/LowPowerNeuralNetwork.dir/flags.make
 CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.obj"
-	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LowPowerNeuralNetwork.dir\main.cpp.obj -c C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\main.cpp
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LowPowerNeuralNetwork.dir\main.cpp.obj -c C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\main.cpp
 
 CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.i"
-	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\main.cpp > CMakeFiles\LowPowerNeuralNetwork.dir\main.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\main.cpp > CMakeFiles\LowPowerNeuralNetwork.dir\main.cpp.i
 
 CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.s"
-	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\main.cpp -o CMakeFiles\LowPowerNeuralNetwork.dir\main.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\main.cpp -o CMakeFiles\LowPowerNeuralNetwork.dir\main.cpp.s
 
 CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.obj: CMakeFiles/LowPowerNeuralNetwork.dir/flags.make
 CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.obj: ../DeepNeuralNetwork.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.obj"
-	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LowPowerNeuralNetwork.dir\DeepNeuralNetwork.cpp.obj -c C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\DeepNeuralNetwork.cpp
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LowPowerNeuralNetwork.dir\DeepNeuralNetwork.cpp.obj -c C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\DeepNeuralNetwork.cpp
 
 CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.i"
-	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\DeepNeuralNetwork.cpp > CMakeFiles\LowPowerNeuralNetwork.dir\DeepNeuralNetwork.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\DeepNeuralNetwork.cpp > CMakeFiles\LowPowerNeuralNetwork.dir\DeepNeuralNetwork.cpp.i
 
 CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.s"
-	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\DeepNeuralNetwork.cpp -o CMakeFiles\LowPowerNeuralNetwork.dir\DeepNeuralNetwork.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\DeepNeuralNetwork.cpp -o CMakeFiles\LowPowerNeuralNetwork.dir\DeepNeuralNetwork.cpp.s
 
 CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.obj: CMakeFiles/LowPowerNeuralNetwork.dir/flags.make
 CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.obj: ../Test/DNNTest.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.obj"
-	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LowPowerNeuralNetwork.dir\Test\DNNTest.cpp.obj -c C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\Test\DNNTest.cpp
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\LowPowerNeuralNetwork.dir\Test\DNNTest.cpp.obj -c C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\Test\DNNTest.cpp
 
 CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.i"
-	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\Test\DNNTest.cpp > CMakeFiles\LowPowerNeuralNetwork.dir\Test\DNNTest.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\Test\DNNTest.cpp > CMakeFiles\LowPowerNeuralNetwork.dir\Test\DNNTest.cpp.i
 
 CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.s"
-	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\Test\DNNTest.cpp -o CMakeFiles\LowPowerNeuralNetwork.dir\Test\DNNTest.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rugge\Desktop\dnn\LPeDNN\LowPowerNeuralNetwork\Test\DNNTest.cpp -o CMakeFiles\LowPowerNeuralNetwork.dir\Test\DNNTest.cpp.s
 
 # Object files for target LowPowerNeuralNetwork
 LowPowerNeuralNetwork_OBJECTS = \

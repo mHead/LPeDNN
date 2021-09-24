@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/DeepNeuralNetwork.cpp" "C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/cmake-build-debug/CMakeFiles/DNNonPC.dir/DeepNeuralNetwork.cpp.obj"
-  "C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/SerialPort.cpp" "C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/cmake-build-debug/CMakeFiles/DNNonPC.dir/SerialPort.cpp.obj"
-  "C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/main.cpp" "C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/cmake-build-debug/CMakeFiles/DNNonPC.dir/main.cpp.obj"
+  "C:/Users/rugge/Desktop/dnn/LPeDNN/DNNonPC/DeepNeuralNetwork.cpp" "C:/Users/rugge/Desktop/dnn/LPeDNN/DNNonPC/cmake-build-debug/CMakeFiles/DNNonPC.dir/DeepNeuralNetwork.cpp.obj"
+  "C:/Users/rugge/Desktop/dnn/LPeDNN/DNNonPC/SerialPort.cpp" "C:/Users/rugge/Desktop/dnn/LPeDNN/DNNonPC/cmake-build-debug/CMakeFiles/DNNonPC.dir/SerialPort.cpp.obj"
+  "C:/Users/rugge/Desktop/dnn/LPeDNN/DNNonPC/main.cpp" "C:/Users/rugge/Desktop/dnn/LPeDNN/DNNonPC/cmake-build-debug/CMakeFiles/DNNonPC.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
