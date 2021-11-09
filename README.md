@@ -1,5 +1,11 @@
 # LPeDNN
 The project aims to embed a Deep Neural Network in charge of recognize characters from a touchscreen on a Low Power Board, specifically the LandTiger NXP LPC1768 based on ARM Cortex-M3 ucontroller
+
+## Development links
+- Github link: [This repo](https://github.com/mHead/LPeDNN)
+- Google Colab link: [Google colab notebook](https://colab.research.google.com/drive/1Djr86fD04rr9ghCRvYnNfeGwNH2MOrM6?usp=sharing#scrollTo=OWICnxbwIYg5)
+- Mbed repo: [Mbed repo](https://os.mbed.com/users/montie97/code/USB_KeyBoard_Mouse_copy/)
+
 ### Development general constraints
  1. DNN Accuracy > 95%
  2. Low degree of redundancy, small DNN size
