@@ -52,19 +52,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\Programs\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\Programs\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC"
+CMAKE_SOURCE_DIR = C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DNNonPC.dir/depend.make
@@ -77,42 +77,42 @@ include CMakeFiles/DNNonPC.dir/flags.make
 
 CMakeFiles/DNNonPC.dir/main.cpp.obj: CMakeFiles/DNNonPC.dir/flags.make
 CMakeFiles/DNNonPC.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DNNonPC.dir/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DNNonPC.dir\main.cpp.obj -c "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DNNonPC.dir/main.cpp.obj"
+	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DNNonPC.dir\main.cpp.obj -c C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\main.cpp
 
 CMakeFiles/DNNonPC.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DNNonPC.dir/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\main.cpp" > CMakeFiles\DNNonPC.dir\main.cpp.i
+	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\main.cpp > CMakeFiles\DNNonPC.dir\main.cpp.i
 
 CMakeFiles/DNNonPC.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DNNonPC.dir/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\main.cpp" -o CMakeFiles\DNNonPC.dir\main.cpp.s
+	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\main.cpp -o CMakeFiles\DNNonPC.dir\main.cpp.s
 
 CMakeFiles/DNNonPC.dir/SerialPort.cpp.obj: CMakeFiles/DNNonPC.dir/flags.make
 CMakeFiles/DNNonPC.dir/SerialPort.cpp.obj: ../SerialPort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DNNonPC.dir/SerialPort.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DNNonPC.dir\SerialPort.cpp.obj -c "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\SerialPort.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DNNonPC.dir/SerialPort.cpp.obj"
+	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DNNonPC.dir\SerialPort.cpp.obj -c C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\SerialPort.cpp
 
 CMakeFiles/DNNonPC.dir/SerialPort.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DNNonPC.dir/SerialPort.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\SerialPort.cpp" > CMakeFiles\DNNonPC.dir\SerialPort.cpp.i
+	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\SerialPort.cpp > CMakeFiles\DNNonPC.dir\SerialPort.cpp.i
 
 CMakeFiles/DNNonPC.dir/SerialPort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DNNonPC.dir/SerialPort.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\SerialPort.cpp" -o CMakeFiles\DNNonPC.dir\SerialPort.cpp.s
+	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\SerialPort.cpp -o CMakeFiles\DNNonPC.dir\SerialPort.cpp.s
 
 CMakeFiles/DNNonPC.dir/DeepNeuralNetwork.cpp.obj: CMakeFiles/DNNonPC.dir/flags.make
 CMakeFiles/DNNonPC.dir/DeepNeuralNetwork.cpp.obj: ../DeepNeuralNetwork.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DNNonPC.dir/DeepNeuralNetwork.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DNNonPC.dir\DeepNeuralNetwork.cpp.obj -c "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\DeepNeuralNetwork.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DNNonPC.dir/DeepNeuralNetwork.cpp.obj"
+	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\DNNonPC.dir\DeepNeuralNetwork.cpp.obj -c C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\DeepNeuralNetwork.cpp
 
 CMakeFiles/DNNonPC.dir/DeepNeuralNetwork.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DNNonPC.dir/DeepNeuralNetwork.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\DeepNeuralNetwork.cpp" > CMakeFiles\DNNonPC.dir\DeepNeuralNetwork.cpp.i
+	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\DeepNeuralNetwork.cpp > CMakeFiles\DNNonPC.dir\DeepNeuralNetwork.cpp.i
 
 CMakeFiles/DNNonPC.dir/DeepNeuralNetwork.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DNNonPC.dir/DeepNeuralNetwork.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\DeepNeuralNetwork.cpp" -o CMakeFiles\DNNonPC.dir\DeepNeuralNetwork.cpp.s
+	D:\Programs\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\DeepNeuralNetwork.cpp -o CMakeFiles\DNNonPC.dir\DeepNeuralNetwork.cpp.s
 
 # Object files for target DNNonPC
 DNNonPC_OBJECTS = \
@@ -130,7 +130,7 @@ DNNonPC.exe: CMakeFiles/DNNonPC.dir/build.make
 DNNonPC.exe: CMakeFiles/DNNonPC.dir/linklibs.rsp
 DNNonPC.exe: CMakeFiles/DNNonPC.dir/objects1.rsp
 DNNonPC.exe: CMakeFiles/DNNonPC.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable DNNonPC.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable DNNonPC.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DNNonPC.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -143,6 +143,6 @@ CMakeFiles/DNNonPC.dir/clean:
 .PHONY : CMakeFiles/DNNonPC.dir/clean
 
 CMakeFiles/DNNonPC.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\cmake-build-debug" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\cmake-build-debug" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\DNNonPC\cmake-build-debug\CMakeFiles\DNNonPC.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\cmake-build-debug C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\cmake-build-debug C:\Users\rugge\Desktop\new_project\LPeDNN\DNNonPC\cmake-build-debug\CMakeFiles\DNNonPC.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/DNNonPC.dir/depend
 

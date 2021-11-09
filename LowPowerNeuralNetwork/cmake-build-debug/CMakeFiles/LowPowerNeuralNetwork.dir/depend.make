@@ -4,10 +4,6 @@
 CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.obj: ../DeepNeuralNetwork.cpp
 CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.obj: ../DeepNeuralNetwork.h
 
-CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.obj: ../DeepNeuralNetwork.h
-CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.obj: ../Test/DNNTest.cpp
-CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.obj: ../Test/DNNTest.h
-
 CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.obj: ../DeepNeuralNetwork.h
 CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.obj: ../Test/DNNTest.h
 CMakeFiles/LowPowerNeuralNetwork.dir/main.cpp.obj: ../main.cpp

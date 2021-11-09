@@ -6,15 +6,31 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.cpp
+C:/Users/rugge/Desktop/new_project/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.cpp
 DeepNeuralNetwork.h
-C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.h
+C:/Users/rugge/Desktop/new_project/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.h
 
-C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.h
+C:/Users/rugge/Desktop/new_project/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.h
 iostream
 -
 algorithm
 -
 limits
 -
+
+C:/Users/rugge/Desktop/new_project/LPeDNN/LowPowerNeuralNetwork/Test/DNNTest.h
+../DeepNeuralNetwork.h
+C:/Users/rugge/Desktop/new_project/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.h
+cassert
+-
+
+C:/Users/rugge/Desktop/new_project/LPeDNN/LowPowerNeuralNetwork/main.cpp
+iostream
+-
+cstdio
+-
+DeepNeuralNetwork.h
+C:/Users/rugge/Desktop/new_project/LPeDNN/LowPowerNeuralNetwork/DeepNeuralNetwork.h
+Test/DNNTest.h
+C:/Users/rugge/Desktop/new_project/LPeDNN/LowPowerNeuralNetwork/Test/DNNTest.h
 

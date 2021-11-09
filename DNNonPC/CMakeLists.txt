@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++ -static")
 
-add_executable(DNNonPC main.cpp SerialPort.h SerialPort.cpp DeepNeuralNetwork.h DeepNeuralNetwork.cpp)
+add_executable(DNNonPC main.cpp SerialPort.cpp DeepNeuralNetwork.cpp )

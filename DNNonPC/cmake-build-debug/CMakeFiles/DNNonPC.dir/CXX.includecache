@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/DeepNeuralNetwork.h
+C:/Users/rugge/Desktop/new_project/LPeDNN/DNNonPC/DeepNeuralNetwork.cpp
+DeepNeuralNetwork.h
+C:/Users/rugge/Desktop/new_project/LPeDNN/DNNonPC/DeepNeuralNetwork.h
+
+C:/Users/rugge/Desktop/new_project/LPeDNN/DNNonPC/DeepNeuralNetwork.h
 iostream
 -
 algorithm
@@ -14,7 +18,11 @@ algorithm
 limits
 -
 
-C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/SerialPort.h
+C:/Users/rugge/Desktop/new_project/LPeDNN/DNNonPC/SerialPort.cpp
+SerialPort.h
+C:/Users/rugge/Desktop/new_project/LPeDNN/DNNonPC/SerialPort.h
+
+C:/Users/rugge/Desktop/new_project/LPeDNN/DNNonPC/SerialPort.h
 windows.h
 -
 stdio.h
@@ -22,7 +30,7 @@ stdio.h
 stdlib.h
 -
 
-C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/main.cpp
+C:/Users/rugge/Desktop/new_project/LPeDNN/DNNonPC/main.cpp
 iostream
 -
 string
@@ -30,7 +38,7 @@ string
 stdlib.h
 -
 SerialPort.h
-C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/SerialPort.h
+C:/Users/rugge/Desktop/new_project/LPeDNN/DNNonPC/SerialPort.h
 DeepNeuralNetwork.h
-C:/Users/rugge/Documents/development/ASE Special Project/LPeDNN/DNNonPC/DeepNeuralNetwork.h
+C:/Users/rugge/Desktop/new_project/LPeDNN/DNNonPC/DeepNeuralNetwork.h
 

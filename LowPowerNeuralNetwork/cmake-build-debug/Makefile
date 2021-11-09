@@ -57,19 +57,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\Programs\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\Programs\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork"
+CMAKE_SOURCE_DIR = C:\Users\rugge\Desktop\new_project\LPeDNN\LowPowerNeuralNetwork
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Users\rugge\Desktop\new_project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -77,7 +77,7 @@ CMAKE_BINARY_DIR = "C:\Users\rugge\Documents\development\ASE Special Project\LPe
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\Programs\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -88,7 +88,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\Programs\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -98,9 +98,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles" "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rugge\Desktop\new_project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles C:\Users\rugge\Desktop\new_project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\rugge\Documents\development\ASE Special Project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\rugge\Desktop\new_project\LPeDNN\LowPowerNeuralNetwork\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -168,33 +168,6 @@ DeepNeuralNetwork.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LowPowerNeuralNetwork.dir\build.make CMakeFiles/LowPowerNeuralNetwork.dir/DeepNeuralNetwork.cpp.s
 .PHONY : DeepNeuralNetwork.cpp.s
 
-Test/DNNTest.obj: Test/DNNTest.cpp.obj
-
-.PHONY : Test/DNNTest.obj
-
-# target to build an object file
-Test/DNNTest.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LowPowerNeuralNetwork.dir\build.make CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.obj
-.PHONY : Test/DNNTest.cpp.obj
-
-Test/DNNTest.i: Test/DNNTest.cpp.i
-
-.PHONY : Test/DNNTest.i
-
-# target to preprocess a source file
-Test/DNNTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LowPowerNeuralNetwork.dir\build.make CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.i
-.PHONY : Test/DNNTest.cpp.i
-
-Test/DNNTest.s: Test/DNNTest.cpp.s
-
-.PHONY : Test/DNNTest.s
-
-# target to generate assembly for a file
-Test/DNNTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\LowPowerNeuralNetwork.dir\build.make CMakeFiles/LowPowerNeuralNetwork.dir/Test/DNNTest.cpp.s
-.PHONY : Test/DNNTest.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -234,9 +207,6 @@ help:
 	@echo ... DeepNeuralNetwork.obj
 	@echo ... DeepNeuralNetwork.i
 	@echo ... DeepNeuralNetwork.s
-	@echo ... Test/DNNTest.obj
-	@echo ... Test/DNNTest.i
-	@echo ... Test/DNNTest.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
